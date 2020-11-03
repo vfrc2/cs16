@@ -3,15 +3,9 @@ version: "2"
 services:
   hlds:
     image: hitman99/hlds
-    volumes: 
-      - ./server.cfg:/home/steam/cs16/cstrike/server.cfg
     environment: 
       - START_MAP=bounce 
       - ADMIN_STEAM=0:1:67012979
-      - SERVER_NAME=vfrc2's cs 16 server
-      - GAME=valve
+      - SERVER_NAME=vfrc2's cs 16 server"
     ports:
-      - 26900:26900/udp
-      - 27020:27020/udp
-      - 27015:27015/udp
-      - 27015:27015/tcp
+      - 27020:27015/udp
